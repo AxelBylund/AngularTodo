@@ -52,7 +52,6 @@ input[type="checkbox"] {
     width: 25px;
     height: 25px;
     bottom: -6px;
-    border-radius: 3px;
     display: inline-block;
     position: relative;
 }
@@ -157,7 +156,7 @@ input[type="checkbox"]:checked:after {
 
 .trump4prez {
     position: absolute;
-    top: 26px;
+    top: 27px;
     left: 40px;
 }
 
@@ -165,8 +164,13 @@ input[type="checkbox"]:checked:after {
     cursor: pointer;
 }
 
+label .toggleAll {
+    position: absolute;
+    bottom: 4px;
+    left: 40px;
+}
+
 .btnRemoveAll {
-    height: 44px;
     float: right;
     cursor: pointer;
 }
