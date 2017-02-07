@@ -1,0 +1,27 @@
+{
+  "name": "karma-test",
+  "version": "1.0.0",
+  "description": "I detta repository finns en färdig `config` för att köra tester via Karma. **De steg nedan har alltså redan körts och filerna nödvändiga för att köra karma finns redan tillgängliga men man måste ändå installera alla dependencies med `npm install`.** Sen borde man kunna köra med tester med `npm test`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-nyan-reporter": "^0.2.5",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-spec-reporter": "^0.0.26"
+  },
+  "dependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-jasmine": "^1.1.0"
+  }
+}

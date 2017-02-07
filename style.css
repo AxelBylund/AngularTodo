@@ -1,0 +1,166 @@
+body {
+	background-color: #e3e3e3;
+	color: #000;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header {
+	width: 100%;
+	position: relative;
+}
+
+body h2 {
+	width: 150px;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+}
+
+.todo-count {
+	text-align: right;
+	margin: 15px 0;
+}
+
+input[type="text"] {
+	padding: 10px;
+	font-size: 20px;
+	width: 619px;
+}
+
+button {
+	background-color: white;
+	/* Green */
+	border: none;
+	color: #000;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+	border: 1px solid grey;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+	width: 25px;
+	height: 25px;
+	bottom: -6px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type="checkbox"]:active,
+.regular-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"]:checked {
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+	color: #99a1a7;
+}
+
+input[type="checkbox"]:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+.ng-scope {
+	padding: 15px 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 700px;
+}
+
+.todo {
+	position: relative;
+}
+
+.editInput {
+	position: absolute;
+	z-index: 12;
+	top: 0;
+	left: 40px;
+}
+
+.btnHide {
+	padding: 0 5px;
+	bottom: -8px;
+	margin-right: 2px;
+	position: relative;
+	float: right;
+	background-image: url(edit.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px;
+	width: 55px;
+	height: 25px;
+}
+
+.btnRemove {
+	color: crimson;
+	padding: 0 5px;
+	bottom: -8px;
+	position: relative;
+	float: right;
+	background-image: url(tool.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px;
+	width: 55px;
+	height: 25px;
+}
+
+.btnAdd {
+	background-image: url(plus.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+	width: 55px;
+	height: 44px;
+	border: none;
+}
+
+.kysfgt {
+	position: absolute;
+	top: 26px;
+	left: 40px;
+}
+
+.toggleAll {
+	cursor: pointer;
+}
+
+.btnRemoveAll {
+	height: 44px;
+	float: right;
+	cursor: pointer;
+}
+
+.all {
+	margin-top: 15px;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	text-align: left;
+	cursor: pointer;
+}

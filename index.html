@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="/node_modules/angular/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+	<div class="container header">
+		<h2>My Todo List</h2>
+		<div class="todo-count">{{remaining()}} of {{todoList.length}} remaining</div>
+	</div>
+	<div class="container">
+		<form ng-submit="todoAdd()">
+			<input type="text" ng-model="todoInput" size="50" placeholder="Add New">
+			<button class="btnAdd"></button>
+		</form>
+		<div class="all" ng-show="isTodo()">
+			<input class="toggleAll" id="toggle-all" type="checkbox" ng-model="markAll" ng-click="toggleMarkAll()" />
+			<label class="toggleAll" for="toggle-all">Mark all as complete</label>
+			<p class="btnRemoveAll" ng-click="remove()">Remove all marked</p>
+		</div>
+		<br>
+		<ul>
+			<li class="todo" ng-repeat="x in todoList">
+				<input type="checkbox" ng-model="x.done">
+				<span class="kysfgt" ng-hide="editing">{{x.todoText}}</span>
+				<button class="btnRemove" ng-click="removeOne()"></button>
+				<button ng-hide="editing" class="btnHide" ng-click="editing = true"></button>
+
+				<form class="editInput" ng-show="editing" ng-submit="editing = false">
+					<input type="text" ng-model="x.todoText" placeholder="Name" ng-required/>
+					<button class="btn" type="submit">Save</button>
+				</form>
+			</li>
+		</ul>
+	</div>
+	<script src="src/example.js"></script>
+</body>
+
+</html>
