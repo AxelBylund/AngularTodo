@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AngularTodo</title>
+    <title>AngularTodo - asdf</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/lib/angular.min.js"></script>
 </head>
 
 <body ng-app="myApp" ng-controller="todoCtrl">
@@ -32,7 +32,6 @@
                 <span class="editing" ng-hide="editing">{{x.todoText}}</span>
                 <button class="btnRemove" ng-click="removeOne()"></button>
                 <button ng-hide="editing" class="btnHide" ng-click="editing = true"></button>
-
                 <form class="editInput" ng-show="editing" ng-submit="editing = false">
                     <input type="text" ng-model="x.todoText" placeholder="{{x.todoText}}" ng-required/>
                     <button class="btn" type="submit"></button>
