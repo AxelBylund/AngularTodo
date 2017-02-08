@@ -29,7 +29,7 @@
         <ul>
             <li class="todo" ng-repeat="x in todoList">
                 <input type="checkbox" ng-model="x.done">
-                <span class="trump4prez" ng-hide="editing">{{x.todoText}}</span>
+                <span class="editing" ng-hide="editing">{{x.todoText}}</span>
                 <button class="btnRemove" ng-click="removeOne()"></button>
                 <button ng-hide="editing" class="btnHide" ng-click="editing = true"></button>
 

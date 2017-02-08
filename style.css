@@ -154,7 +154,7 @@ input[type="checkbox"]:checked:after {
     border: none;
 }
 
-.trump4prez {
+.editing {
     position: absolute;
     top: 27px;
     left: 40px;
